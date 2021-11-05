@@ -1,0 +1,27 @@
+<!--<ng-container *ngIf="observableDelay$ | async"></ng-container>-->
+<!--<div>-->
+<!--  from behaviour subject: {{ value$ | async }}-->
+<!--</div>-->
+
+<div>
+  from input: {{ valueFromInput }}
+</div>
+
+<div>
+  <div *ngIf="someValue === 'true'">value changed</div>
+
+  {{ someValue }}
+
+  <button (click)="changeValue()">
+    Change value
+  </button>
+</div>
+
+<div>
+  <div *ngIf="isPropTrue">prop is true</div>
+  {{ someObject | json }}
+
+  <button (click)="changeObject()">
+    Change object
+  </button>
+</div>

@@ -1,0 +1,12 @@
+<div>With on push:</div>
+
+<app-with-on-push-component [valueFromInput]="valueForInput"></app-with-on-push-component>
+
+<div class="pt-20"></div>
+<div>Without on push:</div>
+<app-without-on-push-component [valueFromInput]="valueForInput"></app-without-on-push-component>
+
+
+<button (click)="valueForInput = 'button clocked'">
+  Change value
+</button>
